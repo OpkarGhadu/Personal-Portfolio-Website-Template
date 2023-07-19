@@ -65,7 +65,10 @@ defaults:
       type: "posts"
     values:
       # values
-      layout: "post"
+      layout: "project"
+      permalink: "/projects/:title"
+      link: "Github.com"
+      desc: "Project Description"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
