@@ -1,0 +1,27 @@
+---
+layout: "default"
+---
+<!-- Page For Individual Projects -->
+<div id="main-project-page">
+    <div id="project-page">
+            <div id="project-page-header">
+                <h2 id="project-page-title">{{page.title}}</h2>
+                <a 
+                    href="{{ page.link }}" 
+                    class="social-icons menu-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        
+            <p class="grey">{{page.desc}}</p>
+            <br/><br/>
+            <p id="project-page-content">{{page.content}}</p>
+            <br/>
+            <br/>
+            <p class="grey">Tech Used:</p>
+            <p>{{page.tech}}</p>
+    </div>
+    <div id="project-image-container">
+        <img id="project-image" src="{{page.img}}" alt="Image of Project">
+    </div>
+</div>

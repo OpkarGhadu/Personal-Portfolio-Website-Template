@@ -1,0 +1,23 @@
+<!-- 
+    To Maintain:
+        WEB     - Page Nav, Title Nav, Social Nav
+        MOBILE  - Title Nav
+-->
+<header>
+    <div id="header-web">
+    <nav class="header-nav-left">
+        {% include navigation.html%}
+    </nav>
+    <h1 id="page-title"><a href="{% link index.md%}">{{site.author}}</a></h1>
+    <nav class="header-nav-right">
+        {% include social.html%}
+    </nav>
+    </div>
+    <div id="header-mobile">
+        <h1 id="page-title"><a href="{% link index.md%}">{{site.author}}</a></h1>
+        <div class="button" >
+            <button id="menu-btn">&#9776</button>
+            <!--<button id="menu-btn" class="close">&#10005</button>-->
+        </div>
+    </div>
+</header>

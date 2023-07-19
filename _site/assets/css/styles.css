@@ -1,0 +1,538 @@
+/* Store Global Variables */
+:root {
+    /* Colors used in site */
+    --siteBackground : #fcfcfc;
+    --siteHeader     : #84b1e5;
+    --siteText       : #000000;
+    --menuMain : #FAD5C8;
+    --menuAlt  : #FAE296;
+    /* Color Bank */
+    --CoolDusk:#799cad;
+    --Emptiness:#fcfcfc;
+}
+
+/* Normalize Global Size Values */
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* For Screen Readers */
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--siteBackground);
+    color: var(--siteTextColor);
+    font-family: Poppins , sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;   
+}
+
+/* Prevents links from changing color*/
+a, a:hover, a:visited, a:active {
+    color: var(--siteTextColor);
+    text-decoration: none;
+   }
+
+/* Standarized hr divider */
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color: var(--siteHeader);
+    height: 1px;
+}
+
+/* Social Media Icons */
+.social-icons{
+    font-size: 1.8rem;
+    letter-spacing: normal;
+    margin: 0 5px;
+    padding-bottom: 3px;
+}
+
+/* HEADER CSS */
+header{
+    background-color: var(--siteHeader);
+}
+
+/* Header for Web version of site*/
+#header-web{
+    display:grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 2fr 2fr 2fr;
+    align-items: center;
+    background-color: var(--siteHeader);
+    padding: 1rem 2rem;
+    min-height: 8rem;
+    height: 10vh;
+
+}
+/* Header for Mobile version of site */
+#header-mobile{
+    display: none;
+    min-height: 8rem;
+    height: 10vh;
+}
+
+/* Name Header on Web and Mobile Version*/
+#page-title{
+    background-color: var(--siteHeader);
+    background-color: transparent;
+    font-family: Poppins , sans-serif;
+    font-weight: 450;
+    letter-spacing: 0.025rem;
+    font-size: 3.5rem;
+    padding: 0;
+    text-align: center;
+    text-transform: none;
+}
+/* Web header Internal and External Links*/
+.header-nav-left > ul, .header-nav-right > ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
+
+.header-nav-right > ul{
+    justify-content: right;
+    
+}
+
+/* Button to open mobile menu*/
+#menu-btn{
+    margin-right: 1rem;
+    padding: 0 0.5rem ;
+    padding-bottom: 1rem;
+    font-size: 3.5rem;
+    color: var(--siteTextColor);
+    background-color: transparent;
+}
+
+#menu-btn:hover{
+    cursor: pointer;
+}
+
+/*Menu Page, hidden until button clicked*/
+#menu-page{
+    overflow: hidden;
+    opacity: 0;
+    background-color: var(--siteBackground);
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+    transition: all 0.4s ease-in-out ;
+}
+
+
+/* MENU INTERNAL NAVIGATION*/
+.menu-nav-left, .menu-nav-right{ 
+    text-align: left;
+    background-color: transparent;
+    font-family: Poppins , sans-serif;
+    line-height: 4rem;
+    font-size: 3rem !important;
+    text-transform: uppercase;
+    letter-spacing: .25px;
+    font-weight: 400;
+
+}
+
+
+
+
+/* MENU SOCIAL NAVIGATION*/
+.menu-nav-right > ul > li {
+    padding: 0.75rem 2.5rem;
+    
+}
+
+/* WEB INTERNAL NAVIGATION*/
+.header-nav-left {
+    text-align: left;
+    background-color: transparent;
+    
+}
+
+/* WEB SOCIAL NAVIGATION*/
+.header-nav-right{
+    text-align: right;
+    background-color: transparent;
+    
+}
+
+.header-nav-left>ul>li, .header-nav-right>ul>li{ /* CHANGE*/
+    font-family: Poppins , sans-serif;
+    line-height: 1.8em;
+    font-size: 1.3rem !important;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    font-weight: 500;
+    padding: 0.1rem;
+    margin: 0.75rem 1rem;
+}
+
+.header-nav-right>ul>li>a{
+    font-size: 2rem;
+}
+
+/* Change to one header*/
+.menu-nav-left a:hover, .menu-nav-right a:hover{ 
+    border-bottom: #000000 1px solid;
+    color: black;
+    cursor: pointer;
+    padding-bottom: 0px;
+}
+
+.header-nav-right a:hover , .header-nav-left  a:hover{ 
+    border-bottom: #000000 1px solid;
+    color: black;
+    cursor: pointer;
+    padding-bottom: 0px;
+}
+
+/* Items in the Menu*/
+.menu-nav-left > ul{
+    text-decoration: none;
+    list-style: none;
+    background-color: var(--menuMain);
+    height: 70vh;
+    padding: 4rem 4rem;
+}
+
+/* Space Between Items in the Menu*/
+.menu-nav-left > ul > li {
+    margin-bottom: 3.5rem;
+    font-size: 4rem;
+
+}
+
+/* Icons */
+.menu-nav-right > ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    height: 20vh;
+    background-color: var(--menuAlt);
+    padding-top: 1rem;
+}
+
+.menu-nav-right > ul > li > a {
+    font-size: 3.5rem;
+}
+
+.menu-icon{
+    font-size: 3rem;
+}
+
+/* MAIN*/
+#main{
+    min-height: 85vh;
+}
+
+/* MAIN PAGE Index.md */
+#main-index{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+#main-image{
+    max-width: 90%;
+    max-height: 80vh;
+    box-shadow: .25rem 0.25rem 0.25rem grey;
+}
+
+
+/* RESUME PAGE resume.md */
+#main-resume{
+    background-color: transparent;
+    display:grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 2fr 3fr;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    line-height: 4rem;
+    padding: 1rem;
+}
+
+/* CONTACT PAGE contact.md */
+#main-contact{
+    display:grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 1fr;
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+}
+
+#contact-items{
+    background-color: transparent;
+    text-align: left;
+    margin-left: 2.5rem;
+    line-height: 4rem;
+}
+
+.contact-page-list{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.contact-page-list > a {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact-page-list > a > i {
+    width: 4rem;   
+}
+
+.contact-name{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+#contact-image-container{
+    padding-right: 2.5rem;
+}
+
+#contact-image{
+    max-width: 90%;
+    max-height: 70vh;
+    box-shadow: .25rem 0.25rem 0.25rem grey;
+    border: black solid 4px;
+
+}
+
+/* PROJECT LIST PAGE projects.md */
+#main-projects{
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    line-height: 4rem;
+    padding: 1rem;
+}
+
+#projects-container{
+    display: flex;
+    justify-content: center;
+}
+
+#projects-list-title{
+    margin-bottom: 2rem;
+}
+
+#projects-list{
+    list-style: none;
+    width: 85%;
+    max-width: 750px;
+}
+
+.project-item{
+    margin-bottom: 4rem;
+    padding: 1rem;
+    border: 2px solid var(--siteHeader);
+}
+
+.project-item-header{
+    background-color: var(--siteBackground);
+    border-radius: 1rem;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+}
+.project-item-title{
+    font-size: 3rem;
+    font-weight: 400;
+    border-bottom: solid grey 1px;
+}
+
+.project-item-title a:hover{
+    cursor: pointer;
+}
+
+.project-item-desc{
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    margin-top: 2rem;
+}
+
+/* INDIVIDUAL PROJECT PAGE*/
+#main-project-page{
+    display:grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 3fr 2fr;
+}
+
+#project-image-container{
+    background-color: transparent;
+    padding: 1rem 1rem;
+    text-align: right;
+    margin-top: 2rem;
+    margin-right: 2.5rem;
+}
+#project-image{
+    max-width: 90%;
+    max-height: 70vh;
+    box-shadow: .25rem 0.25rem 0.25rem grey;
+    border: black solid 2px;
+}
+
+#project-page{
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    line-height: 4rem;
+    width: 90%;
+}
+
+#project-page-header{
+    display:flex;
+    column-gap:6rem;   
+}
+
+.grey{
+    color: grey;
+}
+
+/* FOOTER CSS  */
+#footer-content{
+    position: relative;
+    display:flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--siteHeader);
+    padding: 1rem;
+    height: 5vh;   
+}
+/* Media Queries */
+/* 
+	If user has no preference for scroll type, set to smooth.
+	Used for accessibility
+*/ 
+@media(prefers-reduced-motion:no-preference){
+    * {
+    scroll-behavior: smooth;
+  }
+  }
+/* Medium Screen Breakpoint */  
+/* Web Screen */
+@media only screen and (min-width: 821px) {
+    #menu-page{
+        opacity: 0;
+        height: 0vh;
+        display: none;
+        overflow: hidden;
+    }
+
+    #main{
+        display:flex !important;
+        position: relative;
+        background-color: var(--siteBackground);
+        min-height: 85vh;
+        flex-direction: column;
+        /*place-content: center;*/
+        flex-wrap: wrap;
+        padding: 2rem 2rem;
+    }
+
+    #footer-content{
+        display:flex !important;
+        
+    }
+
+    #contact-image-container, #project-image-container{
+        display: grid;
+    }
+
+    #header-web {
+        display:grid;
+    }
+}
+/* Mobile Screen */
+@media only screen and (max-width: 820px) {
+    #contact-image-container, #project-image-container{
+        display: none;
+    }
+
+    #main-projects{
+        display: block;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        line-height: 4rem;
+    }
+
+    #main-resume{
+        display: block;
+        
+    }
+
+    html{
+        font-size: 9;
+    }
+
+    #menu-page{
+        display:block;
+    }
+
+    #header-web {
+        display:none;
+    }
+
+    #header-mobile{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--siteHeader);
+        padding: 1rem 2rem;
+        height: 10vh;
+
+    }
+  
+    #page-title{
+        font-size: 3.5rem;
+        padding: 0 0.5rem;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html{
+        font-size: 7px;
+    }
+    .menu-icon{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    html{
+        font-size: 4px;
+    }
+    .menu-icon{
+        font-size: 2rem;
+    }
+}    

@@ -1,0 +1,34 @@
+Explaining Project Workflow:
+___________________________________________________
+
+The displayed pages are index and all the pages in 
+the /pages/ subfolder
+
+These pages use the default layout
+
+The default layout includes every component in the 
+/includes/ subfolder
+
+___________________________________________________
+In root directory are the pages:
+    index (home), contact, resume, and projects
+    This is where we include page specific content
+
+In _drafts
+    Store draft project posts not ready to upload
+
+In _includes
+    The code of the sections that are included into
+        every page : footer , header , menu
+
+In _layouts
+    The page layouts. "default" is the wrapper that
+        every page will use
+
+In /assets/
+    Store CSS, Images, Javascript, other data
+
+In _Posts/
+    Store blog posts, or in our case, projects
+
+
