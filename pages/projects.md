@@ -19,6 +19,8 @@ permalink: "/projects/"
                         </h3>
                         <a 
                             href="{{ post.link }}" 
+                            target="_blank" 
+                            rel="noreferrer noopener"
                             class="social-icons menu-icon">
                             <i class="fab fa-github"></i>
                         </a>
