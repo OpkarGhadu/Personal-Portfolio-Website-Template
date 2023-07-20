@@ -45,6 +45,8 @@ permalink: "/contact/"
             <li class="contact-page-list">
                 <a 
                     href="{{site.youtube_url}}" 
+                    target="_blank" 
+                    rel="noreferrer noopener"
                     class="social-icons menu-icon">
                     <i class="fab fa-youtube"></i>
                     <p class="contact-name">Youtube</p>
@@ -53,6 +55,8 @@ permalink: "/contact/"
             <li class="contact-page-list">
                 <a 
                     href="{{site.spotify_url}}" 
+                    target="_blank" 
+                    rel="noreferrer noopener"
                     class="social-icons menu-icon">
                     <i class="fab fa-spotify"></i>
                     <p class="contact-name">Spotify</p>
@@ -61,6 +65,8 @@ permalink: "/contact/"
             <li class="contact-page-list">
                 <a 
                     href="{{site.soundcloud_url}}" 
+                    target="_blank" 
+                    rel="noreferrer noopener"
                     class="social-icons menu-icon">
                     <i class="fab fa-soundcloud"></i>
                     <p class="contact-name">Soundcloud</p>
