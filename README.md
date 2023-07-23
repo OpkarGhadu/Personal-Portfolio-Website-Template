@@ -4,7 +4,7 @@ This website was made using HTML, CSS, and Javascript and is generated as a stat
 #### Preview:
 <img src="https://github.com/OpkarGhadu/Personal-Portfolio-Website-Template/blob/master/assets/images/projects/project_portfolio.png" width="450">
 
-Watch preview of the site on a desktop browser:
+Watch a preview of the site on a desktop browser:
 
 https://github.com/OpkarGhadu/Personal-Portfolio-Website-Template/assets/6346551/33eacb4d-13bd-4cfb-b4d5-377098fd5bbd
 
